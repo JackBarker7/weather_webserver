@@ -4,7 +4,7 @@ Note: This is expected to be running on a Raspberry Pi or similar device, using 
 
 To run Django development server: `python3 manage.py runserver` <br />
 To run data collection script: `python3 manage.py runscript collect_data` <br />
-Required packages listed in `requirements/txt` <br />
+Required packages listed in `requirements.txt` <br />
 Server can be accessed, while running, by typing [hostURL]:8000 on any machine connected to the same network (eg. 192.168.0.50:8000)
 
 Setup
