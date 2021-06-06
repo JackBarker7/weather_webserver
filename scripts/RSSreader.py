@@ -1,7 +1,7 @@
 import feedparser
 
 def getBBCdata(url):
-    feed = feedparser.parse("https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/2633866")
+    feed = feedparser.parse(url)
 
 
     data = (feed["entries"][0]["summary"])
