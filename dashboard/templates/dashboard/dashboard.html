@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href = "{% static 'dashboard/mainCss.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="shortcut icon" type="image/png" href = "{% static 'dashboard/favicon.png' %}">
+</head>
+<body>
+    <script>
+        var frequency = "{{ frequency|safe }}";
+        var data = "{{ data|safe }}";
+    </script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    
+
+    
+    <div id="tempDailyChartDiv" class="graphDiv"></div>
+    <div id="currentReadouts" class="readoutDiv">
+        <div id="tempReadout" class = "readoutDisplayDiv">
+            <div id="tempTitleDiv" class="titleDiv">
+                <p>Indoor Temperature</p>
+            </div>
+            <div id="tempDisplayDiv" class="displayDiv">
+                
+            </div>
+        </div>
+        <div id="BBCtempReadout" class = "readoutDisplayDiv">
+            <div id="BBCtempTitleDiv" class="titleDiv">
+                <p>Outdoor Temperature</p>
+            </div>
+            <div id="BBCtempDisplayDiv" class="displayDiv">
+                
+            </div>
+        </div>
+        <div id="humidReadout" class = "readoutDisplayDiv">
+            <div id="humidTitleDiv" class="titleDiv">
+                <p>Indoor Humidity</p>
+            </div>
+            <div id="humidDisplayDiv" class="displayDiv">
+                
+            </div>
+        </div>
+        <div id="pressReadout" class = "readoutDisplayDiv">
+            <div id="pressTitleDiv" class="titleDiv">
+                <p>Pressure</p>
+            </div>
+            <div id="pressDisplayDiv" class="displayDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="humidDailyChartDiv" class="graphDiv"></div>
+    <div id="pressDailyChartDiv" class="graphDiv"></div>
+
+    <div id="tempWeeklyChartDiv" class="graphDiv"></div>
+    <div id="humidWeeklyChartDiv" class="graphDiv"></div>
+    <div id="pressWeeklyChartDiv" class="graphDiv"></div>
+    <!--
+    {% for entry in data %}
+        <p>Time: {{ entry.timestamp }}</p>
+        <p>Temperature: {{ entry.temperature }}</p>
+        <p>Pressure: {{ entry.pressure }}</p>
+        <p>Humidity: {{ entry.humidity }}</p>
+    {% endfor %}
+    -->
+    <script src="{% static 'dashboard/jscharting.js' %}" type = "text/javascript"></script>
+    <script src="{% static 'dashboard/graphing.js' %}" type = "text/javascript"></script>
+    
+    
+
+</body>
+</html>

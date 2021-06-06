@@ -1,0 +1,27 @@
+.graphDiv {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.readoutDiv{
+    font-family: "Mulish", sans-serif;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.readoutDisplayDiv{
+    width: 50%;
+    height: 200px;
+    float: left
+}
+.titleDiv{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.displayDiv{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-size: 3.5em;
+}
