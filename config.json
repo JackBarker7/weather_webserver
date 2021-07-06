@@ -1,7 +1,9 @@
 {
     "settings": {
         "dataFrequency": 300,
-        "locationURL": "https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/2643743"
+        "locationURL": "https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/2643743",
+        "useESP": true,
+        "thingSpeakID": 1434168
         
     }
 }
