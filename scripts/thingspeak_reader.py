@@ -3,7 +3,7 @@ import urllib.request
 import os
 
 def main(id):    
-    url = "https://thingspeak.com/channels/"+id+"/feeds/last.csv"
+    url = "https://thingspeak.com/channels/"+str(id)+"/feeds/last.csv"
     csvfile = "temp.csv"
     urllib.request.urlretrieve(url, csvfile)
     return_arr = []
