@@ -17,3 +17,5 @@ Setup
 4) [Optional: only if using remote sensor] Set up ESP8266 device with ThingSpeak, and change value of `thingSpeakID` in config to your channel id. The expected order of fields is temperature, humidity, pressure. Set `useESP` to `true`
 
 NB: I have modified the JSCharting source file slightly to remove the logo which appeared on every graph. The original file can be found at https://code.jscharting.com/latest/jscharting.js
+
+Some other useful code/scripts can be found in useful_scripts
