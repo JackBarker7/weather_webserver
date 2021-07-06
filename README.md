@@ -18,4 +18,4 @@ Setup
 
 NB: I have modified the JSCharting source file slightly to remove the logo which appeared on every graph. The original file can be found at https://code.jscharting.com/latest/jscharting.js
 
-Some other useful code/scripts can be found in useful_scripts
+Some other useful code/scripts can be found in useful_scripts. Arduino IoT Cloud integration allows for easy integration with Amazon Alexa using the Arduino skill
