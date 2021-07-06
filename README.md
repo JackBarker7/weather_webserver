@@ -14,6 +14,6 @@ Setup
 1) Add local IP addresses of all machines that will access the webserver to `ALLOWED_HOSTS` in `settings.py` (eg 192.168.0.100) <br />
 2) Make sure `bme280.py` in scripts has the correct I2C address for your sensor <br />
 3) Change the value of `locationURL` in `config.json` to a correct one for your location (by finding your local BBC weather forecast, and replacing the trailing numbers in the example URL with the ones from your location. Eg. for London, the address is https://www.bbc.co.uk/weather/2643743, so the URL becomes https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/2643743)
-4) [Optional: only if using remote sensor] Set up ESP8266 device with ThingSpeak, and change value of `thingSpeakID` in config to your channel id. The expected order of fields is temperature, humidity, pressure
+4) [Optional: only if using remote sensor] Set up ESP8266 device with ThingSpeak, and change value of `thingSpeakID` in config to your channel id. The expected order of fields is temperature, humidity, pressure. Set `useESP` to `true`
 
 NB: I have modified the JSCharting source file slightly to remove the logo which appeared on every graph. The original file can be found at https://code.jscharting.com/latest/jscharting.js
